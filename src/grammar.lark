@@ -1,0 +1,16 @@
+start: (s)*
+
+s: F n pm
+F: "function"
+pm: PA pl PC
+PA: "("
+PC: ")"
+pl: V x LT | V x
+V: "var"
+x: n ":" T
+n: L rn
+rn: L rn | L
+L: "0".."9"
+T: "boolean" | "string"
+lt: P x lt
+P: ";"
